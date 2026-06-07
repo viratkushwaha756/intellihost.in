@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Intelli Host provides top-notch facilities to ensure you have a relaxing and memorable stay.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylem.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="stylem4.css">
+   
+    <title>Intelli Host</title>
+    <link rel="icon" href="image/logo1.png" type="image/png" />
+    <meta property="og:image" content="image/logo1.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <body style="background-color: hsla(330, 100%, 80%, 0.5);"></body>
+    
+</head>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+         <img src="image/logo1.png" alt="Intelli Host Logo" /> <!-- Added descriptive alt text -->
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About</a></li>     
+            <li><a class ="active" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." class="search-input" aria-label="Search" />
+                <button id="search-btn" class="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i> <!-- Font Awesome Search Icon -->
+                </button>
+            </div>
+           <!-- Phone Icon using Font Awesome -->
+           <a href="tel:+919067574790" class="icon phone-icon" aria-label="Call Us">
+            <i class="fas fa-phone"></i> <!-- Font Awesome Phone Icon -->
+           
+        </a>
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/+919067574790?text=Hi%20Intelli%20Host!%20I'm%20looking%20for%20a%20rental%20home" target="_blank" class="whatsapp-link" aria-label="Chat on WhatsApp">
+            <img src="image/wa.png" alt="WhatsApp" class="whatsapp-image">
+        </a>
+        
+            <ol class="menu-item">
+                <button id="menu-btn" class="menu-btn">☰</button>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <span id="close-btn" class="close-btn">&times;</span>
+
+                    <ul>
+                        <li><a href="#" id="login-link">Login</a></li>
+                        <li><a href="#" id="signup-link">Sign Up</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </ol>
+
+        </div>
+    </nav>
+   
+    <div id="auth-modal" class="auth-modal">
+        <div class="auth-modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form">
+                <h2>Login</h2>
+                <form id="login" method="POST" action="index.php">
+                    <input type="text" id="login-name" name="login-name" placeholder="Full name" required>
+                    <input type="text" id="login-userid" name="login-userid" placeholder="User ID" required>
+                    <input type="password" id="login-password" name="login-password" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+            </div>
+    
+            <!-- Signup Form -->
+            <div id="signup-form" class="auth-form">
+                <h2>Sign Up</h2>
+                <form id="signup" method="POST" action="index.php">
+                    <input type="text" id="signup-name" name="signup-name" placeholder="Name" required>
+                    <input type="text" id="signup-address" name="signup-address" placeholder="Address" required>
+                    <input type="email" id="signup-email" name="signup-email" placeholder="Email" required>
+                    <input type="text" id="signup-userid" name="signup-userid" placeholder="User ID" required>
+                    <input type="password" id="signup-password" name="signup-password" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+     </div>
+    
+
+    <header>
+        <h1>Welcome to <span class="intelli">Intelli</span> <span class="host">Host</span></h1>
+        <p>Your comfort is our priority. We provide top-notch facilities to ensure you have a relaxing and memorable stay.</p>
+        <p class="welcome-phrase">Enjoy a truly comfortable experience with us.</p>
+    </header>
+
+    <div class="content-map">
+        <!-- Google Maps Embed Link -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5013679456075!2d-122.42075518468176!3d37.77492997975909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f78c396f%3A0xdad1c91e9bdf52fc!2sIntelli%20Host%20Location!5e0!3m2!1sen!2sus!4v1661190926734!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Left Side: Contact Information -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><strong>IntelliHost Hospitality Private Limited</strong></p>
+                <p>Ground Floor, A-04,Anjana apartment , Bhekrai Nagar , Hadpsar-412308</p>
+                <p><strong>Branches:</strong> Pune,Mumbai,Hyderabad,Nagpur,Nashik,Karad,<br>Banglore</p>
+                <p><strong>Phone:</strong> <a href="tel:+919067574790">+919067574790</a></p>
+                <p><strong>Email:</strong> <a href="https//mail.google.com/mail/?view=cm&fs=1&to=intellihost7@gmail.com">intellihost7@gmail.com</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/+919067574790?text=Hi%20Intelli%20Host!%20I'm%20looking%20for%20a%20rental%20home" target="_blank">+919067574790</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/intellihost" target="_blank">Follow us on Instagram</a></p>
+            </div>
+    
+            <!-- Right Side: Query Form -->
+            <div class="contact-form">
+                <form action="contact.php" method="post">
+                    <h3>Contact Us</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Enter your address" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="query">Query</label>
+                        <textarea id="query" name="query" placeholder="Enter your query" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+            <!-- Small Map Image on the Right Corner -->
+
+        </div>
+        </div>
+    </section>
+    
+
+
+
+    
+    <footer class="footer">
+        <div class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/johndoe" target="_blank" class="social-icon">
+                <img src="image/fa.png" alt="Facebook" style="width: 25px; height: 25px;">
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com/johndoe" target="_blank" class="social-icon">
+                <img src="image/tw.png" alt="Twitter" style="width: 25px; height: 25px;">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/johndoe" target="_blank" class="social-icon">
+                <img src="image/ins.jpg" alt="Instagram" style="width: 25px; height: 25px;">
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="social-icon">
+                <img src="image/lin.png" alt="LinkedIn" style="width: 25px; height: 25px;">
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+919067574790?text?text?text=Hi%20Intelli%20Host!%20I'm%20looking%20for%20a%20rental%20home" target="_blank" class="social-icon">
+                <img src="image/wha.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+            </a>
+            <!-- Email (Gmail) -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=intellihost7@gmail.com" target="_blank" class="social-icon">
+                <img src="image/gm.png" alt="Email" style="width: 30px; height: 20px;">
+            </a>
+        </div>
+        
+        
+        <p>&copy; 2024 Intelli Host. All rights reserved.</p><br>
+        <p>this website is created by chandan kushwaha</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

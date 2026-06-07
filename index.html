@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylem.css">
+    <title>Intelli Host</title>
+    <link rel="icon" href="image/logo1.png" type="image/png" />
+    <meta property="og:image" content="image/ logo1.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta property="og:image" content="image/logo1.png">
+    <body style="background-color:navy"></body>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+         <img src="image/logo1.png" alt="Intelli Host Logo" /> <!-- Added descriptive alt text -->
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a class ="active" href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a  href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+        <div class="icons">
+            <div class="icons">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search..." class="search-input" aria-label="Search" />
+                    <button id="search-btn" class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i> <!-- Font Awesome Search Icon -->
+                    </button>
+                </div>
+            </div>
+            
+            <a href="tel:+919067574790" class="icon phone-icon" aria-label="Call Us">
+                <i class="fas fa-phone"></i>
+            </a>
+            
+            <!-- WhatsApp Icon -->
+            <a href="https://wa.me/+919067574790?text=Hi%20Intelli%20Host!%20I'm%20looking%20for%20a%20rental%20home" target="_blank" class="whatsapp-link" aria-label="Chat with IntelliHost on WhatsApp">
+                <img src="image/wa.png" alt="WhatsApp" class="whatsapp-image">
+            </a>
+            
+            
+            
+            
+          
+            <ol class="menu-item">
+                <button id="menu-btn" class="menu-btn">☰</button>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <span id="close-btn" class="close-btn">&times;</span>
+
+                    <ul>
+                        <li><a href="#" id="login-link">Login</a></li>
+                        <li><a href="#" id="signup-link">Sign Up</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </ol>
+          
+        </div>
+    </nav>
+   
+
+
+
+    
+
+<!-- Login and Sign Up Modal Forms -->
+ <div id="auth-modal" class="auth-modal">
+    <div class="auth-modal-content">
+        <span class="close-btn">&times;</span>
+        
+        <!-- Login Form -->
+        <div id="login-form" class="auth-form">
+            <h2>Login</h2>
+            <form id="login" method="POST" action="index.php">
+                <input type="text" id="login-name" name="login-name" placeholder="Full name" required>
+                <input type="text" id="login-userid" name="login-userid" placeholder="User ID" required>
+                <input type="password" id="login-password" name="login-password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signup-form" class="auth-form">
+            <h2>Sign Up</h2>
+            <form id="signup" method="POST" action="index.php">
+                <input type="text" id="signup-name" name="signup-name" placeholder="Name" required>
+                <input type="text" id="signup-address" name="signup-address" placeholder="Address" required>
+                <input type="email" id="signup-email" name="signup-email" placeholder="Email" required>
+                <input type="text" id="signup-userid" name="signup-userid" placeholder="User ID" required>
+                <input type="password" id="signup-password" name="signup-password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="slideshow-container">
+        <div class="slideshow-text">
+            <p>
+                <span class="first-part">"Live Smarter, Live Better, Live IntelliHost"</span><br>
+                <span class="second-part">Managed Living Spaces For Modern Tenants!</span>
+            </p>
+        </div>
+        
+        <!-- Search Bar -->
+     <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Search images...">
+        <button class="search-button"><i class="fas fa-search"></i>Search</button>
+     </div>
+        <div class="slideshow">
+            <img src="image/a1.jpg" alt="Image A1">
+            <img src="image/a2.jpg" alt="Image A2">
+            <img src="image/a3.jpg" alt="Image A3">
+            <img src="image/a4.jpg" alt="Image A4">
+        </div>
+        
+    </div>
+
+
+    <!-- Our City Section -->
+<section class="our-city">
+    <h2>Our Presence</h2>
+    <div class="city-images">
+        <a href="pune.html" class="city-image">
+            <img src="image/p1.jpg" alt="Pune">
+            <div class="city-name">Pune</div>
+        </a>
+        <a href="mumbai.html" class="city-image">
+            <img src="image/m.jpg" alt="Mumbai">
+            <div class="city-name">Mumbai</div>
+        </a>
+        <a href="hyderabad.html" class="city-image">
+            <img src="image/h.jpg" alt="Hyderabad">
+            <div class="city-name">Hyderabad</div>
+        </a>
+        <a href="nagpur.html" class="city-image">
+            <img src="image/n.jpg" alt="Nagpur">
+            <div class="city-name">Nagpur</div>
+        </a>
+        <a href="nashik.html" class="city-image">
+            <img src="image/na.jpg" alt="Nashik">
+            <div class="city-name">Nashik</div>
+        </a>
+        <a href="karad.html" class="city-image">
+            <img src="image/nan.jpg" alt="Nanded">
+            <div class="city-name">Nanded</div>
+        </a>
+        <a href="satara.html" class="city-image">
+            <img src="image/s1.jpg" alt="Satara">
+            <div class="city-name">Satara</div>
+        </a>
+        <a href="bangalore.html" class="city-image">
+            <img src="image/ba.jpg" alt="Bangalore">
+            <div class="city-name">Bangalore</div>
+        </a>
+    </div>
+</section>
+
+    
+    
+    <!-- Button to open chatbot -->
+<button id="open-chatbot" aria-label="Open Chatbot">
+    <img src="image/ai.png" alt="Pushpa sir" class="chatbot-avatar" />
+    Chat with pushpa sir
+</button>
+
+<!-- Chatbot Container -->
+<div id="chatbot-container" style="display: none;">
+    <div id="chatbot-header">
+        <span>Intelli-Host</span>
+        <button id="close-chatbot" aria-label="Close Chatbot">&times;</button>
+    </div>
+    <div id="chatbot-messages">
+        <!-- Initial Bot Message -->
+        <div class="chatbot-message bot">
+            <div class="bot-avatar">
+                <img src="image/ai.png" alt="Pushpa sir" class="bot-avatar-img" /> <!-- Male avatar image -->
+            </div>
+            <p>Hello! I'm Phushpa sir. How can I assist you today?</p>
+        </div>
+    </div>
+    <div id="chatbot-input">
+        <input type="text" id="user-input" placeholder="Ask me anything..." aria-label="Ask question" />
+        <button id="send-message" aria-label="Send Message">Send</button>
+    </div>
+</div>
+
+
+    <section class="our-template">
+        <h2>Our Templates</h2>
+        <div class="template-images">
+            <img src="image/b1.png" alt="Template Image 1">
+            <img src="image/b21.png" alt="Template Image 1">
+            <img src="image/b3.png" alt="Template Image 3">
+            <img src="image/b4.png" alt="TemplateImage 4">
+            
+            <img src="image/b5.png" alt="Template Image 5">
+            <img src="image/b6.png" alt="Template Image 6">
+            <img src="image/b71.png" alt="Template Image 6">
+            <img src="image/b8.png" alt="Template Image 8">
+            <img src="image/b9.png" alt="Template Image 7">
+            <img src="image/b10.png" alt="Template Image 7">
+            <img src="image/b11.png" alt="Template Image 7">
+            <img src="image/b12.png" alt="Template Image 2">
+           
+           
+        </div>
+      
+    
+          
+     <section class="our Events">
+        <h2>Our Events</h2>
+       <div class="events-images">
+         <div class="image-container">
+            <img src="image/f1.jpg" alt="Template Image 1">
+        </div>
+        <div class="image-container">
+            <img src="image/ev.jpg" alt="Template Image 2">
+        </div>
+        <div class="image-container">
+            <img src="image/ev2.jpg" alt="Template Image 3">
+        </div>
+        <div class="image-container">
+            <img src="image/f4.jpg" alt="Template Image 4">
+        </div>
+        </div>
+     </section>
+
+
+
+
+     
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-nav">
+            <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About</a></li>  
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+             
+        <div class="social-media">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/johndoe" target="_blank" class="social-icon">
+                <img src="image/fa.png" alt="Facebook" style="width: 25px; height: 25px;">
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com/johndoe" target="_blank" class="social-icon">
+                <img src="image/tw.png" alt="Twitter" style="width: 25px; height: 25px;">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/johndoe" target="_blank" class="social-icon">
+                <img src="image/ins.jpg" alt="Instagram" style="width: 25px; height: 25px;">
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="social-icon">
+                <img src="image/lin.png" alt="LinkedIn" style="width: 25px; height: 25px;">
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+919067574790?text?text?text=Hi%20Intelli%20Host!%20I'm%20looking%20for%20a%20rental%20home" target="_blank" class="social-icon">
+                <img src="image/wha.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+            </a>
+            <!-- Email (Gmail) -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=intellihost7@gmail.com" target="_blank" class="social-icon">
+                <img src="image/gm.png" alt="Email" style="width: 30px; height: 20px;">
+            </a>
+        </div>
+        
+        
+        <p>&copy; 2024 Intelli Host. All rights reserved.</p><br>
+        <p>this website is created by chandan kushwaha</p>
+    </footer>
+    
+    <script>
+       
+    
+        fetch('updateViewerCount.php')
+            .then(response => response.text())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error updating viewer count:', error));
+    </script>
+
+    
+   
+<script src="main.js"></script>
+
+</body>
+</html>
